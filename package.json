@@ -1,0 +1,21 @@
+{
+  "name": "libertas-sprinkler",
+  "version": "1.0.0",
+  "description": "Sprinkler demo in typescript.",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "devDependencies": {
+    "tsdown": "latest",
+    "typescript": "latest",
+    "@libertas-ai/types": "latest",
+    "@types/node": "latest",
+    "tsx": "latest",
+    "unrun": "latest"
+  }
+}
