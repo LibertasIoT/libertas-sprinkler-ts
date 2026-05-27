@@ -54,29 +54,6 @@ declare interface TimeSlot {
     duration: number;
 }
 
-/**
- * Zone information
- * Information about the sprinkler zone's next watering schedule and hold-off period list. A hold-off ensures the zone won't be watered during the period.
- * @LibertasResponse
- * @LibertasSubscriptionData
- * @LibertasNextRequest("UpdateHoldOff")
- */    
-declare interface ZoneInfo {
-    /**
-     * Next watering schedule
-     * The next scheduled watering time and duration. This schedule is dynamically calculated and may change later. The calculation must avoid the hold-off periods.
-     */
-    nextSchedule: TimeSlot;
-    /**
-     * Hold off periods
-     * The list of sprinkler's hold-off period that the dynamic calculation of watering schedule must avoid. A hold-off ensures a sprinkler zone (area) won't be watered during the period.
-     * ----
-     * Hold off period
-     * A start time and duration of a watering hold-off.
-     */
-    holdOffPeriods: TimeSlot[];    
-}
-
 /** 
  * Libertas sprinkler runtime protocol
  * The runtime protocol of Libertas sprinkler agent
